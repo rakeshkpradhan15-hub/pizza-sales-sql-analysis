@@ -1,19 +1,45 @@
 # Pizza Sales SQL Analysis
 
-## Dataset Used
+## Project Overview
 
-The project uses four datasets:
+This project analyzes pizza sales data using SQL to identify:
 
-| Table Name | Description |
-|---|---|
-| orders | Stores order-level information |
-| order_details | Stores pizza quantities per order |
-| pizzas | Contains pizza pricing and size |
-| pizza_types | Contains pizza category and ingredients |
+- Revenue trends
+- Customer ordering behavior
+- Peak sales hours
+- Best-selling pizzas
+- Category-wise sales performance
+
+The goal of this project is to generate business insights that can help improve decision-making for a pizza restaurant.
 
 ---
 
-## Tools Used
+# Business Problem
+
+The restaurant wants to understand:
+
+- Which pizzas generate the highest revenue
+- Which pizza categories are most popular
+- What time customers order the most
+- Which pizza sizes are ordered most frequently
+- How sales performance can be improved
+
+---
+
+# Dataset Information
+
+The project uses the following datasets:
+
+| Table Name | Description |
+|------------|-------------|
+| orders | Stores order date and time |
+| order_details | Stores quantity of pizzas per order |
+| pizzas | Stores pizza prices and sizes |
+| pizza_types | Stores pizza names and categories |
+
+---
+
+# Tools Used
 
 - MySQL
 - SQL
@@ -21,37 +47,40 @@ The project uses four datasets:
 
 ---
 
-## SQL Concepts Used
+# SQL Concepts Used
 
-- Joins
+- SELECT
+- GROUP BY
+- ORDER BY
+- LIMIT
+- INNER JOIN
 - Aggregate Functions
-- Group By
-- Order By
 - Revenue Calculations
-- Filtering
 - Data Aggregation
-- window fucntion
--date time function 
+
 ---
 
-## Key Business Questions Solved
+# Business Questions Solved
 
-1. Total orders placed
+1. Total number of orders placed
 2. Total revenue generated
 3. Highest priced pizza
-4. Most ordered pizza size
-5. Peak ordering hours
-6. Best-selling pizza categories
-7. Top revenue-generating pizzas
-8. Average daily orders
-9. Category-wise revenue contribution
-10.cumilative revenue over time
-11.top 3 pizza by each category
+4. Most commonly ordered pizza size
+5. Top ordered pizza types
+6. Peak ordering hours
+7. Average orders per day
+8. Category-wise order analysis
+9. Top revenue generating pizzas
+10. Revenue contribution by pizza category
+
 ---
 
-## Key Insights
+# Key Business Insights
 
-- Large pizzas contribute significantly to total sales.
-- Certain pizza categories dominate customer orders.
-- Peak ordering occurs during specific business hours.
-- A small number of pizzas generate major revenue contribution.
+- Large pizzas generated significant revenue contribution.
+- Peak orders occurred during lunch and evening hours.
+- Certain pizza categories consistently outperformed others.
+- A limited number of pizzas generated the majority of sales revenue.
+
+---
+
